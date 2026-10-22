@@ -1,0 +1,2185 @@
+{
+  "lesson_id": "PP-P02",
+  "variant_count": 30,
+  "answer_key_included": false,
+  "variants": [
+    {
+      "kind": "descending_bands",
+      "title": "Рівень тесту",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "балів"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "bands": [
+        {
+          "min": 90,
+          "label": "відмінно"
+        },
+        {
+          "min": 74,
+          "label": "добре"
+        },
+        {
+          "min": 60,
+          "label": "задовільно"
+        }
+      ],
+      "default": "потрібно доопрацювати",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти пороги від найбільшого до найменшого.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            59
+          ]
+        },
+        {
+          "values": [
+            60
+          ]
+        },
+        {
+          "values": [
+            74
+          ]
+        },
+        {
+          "values": [
+            90
+          ]
+        },
+        {
+          "values": [
+            100
+          ]
+        },
+        {
+          "values": [
+            101
+          ]
+        }
+      ],
+      "number": 1
+    },
+    {
+      "kind": "descending_bands",
+      "title": "Якість сигналу",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "%"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "bands": [
+        {
+          "min": 80,
+          "label": "сильний"
+        },
+        {
+          "min": 50,
+          "label": "стабільний"
+        },
+        {
+          "min": 25,
+          "label": "слабкий"
+        }
+      ],
+      "default": "критичний",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти пороги від найбільшого до найменшого.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            24
+          ]
+        },
+        {
+          "values": [
+            25
+          ]
+        },
+        {
+          "values": [
+            50
+          ]
+        },
+        {
+          "values": [
+            80
+          ]
+        },
+        {
+          "values": [
+            100
+          ]
+        },
+        {
+          "values": [
+            101
+          ]
+        }
+      ],
+      "number": 2
+    },
+    {
+      "kind": "descending_bands",
+      "title": "Заповнення сховища",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "%"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "bands": [
+        {
+          "min": 90,
+          "label": "критично"
+        },
+        {
+          "min": 70,
+          "label": "увага"
+        },
+        {
+          "min": 40,
+          "label": "нормально"
+        }
+      ],
+      "default": "вільно",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти пороги від найбільшого до найменшого.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            39
+          ]
+        },
+        {
+          "values": [
+            40
+          ]
+        },
+        {
+          "values": [
+            70
+          ]
+        },
+        {
+          "values": [
+            90
+          ]
+        },
+        {
+          "values": [
+            100
+          ]
+        },
+        {
+          "values": [
+            101
+          ]
+        }
+      ],
+      "number": 3
+    },
+    {
+      "kind": "descending_bands",
+      "title": "Прогрес завдання",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "балів прогресу"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 120
+      },
+      "bands": [
+        {
+          "min": 100,
+          "label": "завершено"
+        },
+        {
+          "min": 75,
+          "label": "майже готово"
+        },
+        {
+          "min": 30,
+          "label": "у роботі"
+        }
+      ],
+      "default": "початок",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти пороги від найбільшого до найменшого.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            29
+          ]
+        },
+        {
+          "values": [
+            30
+          ]
+        },
+        {
+          "values": [
+            75
+          ]
+        },
+        {
+          "values": [
+            100
+          ]
+        },
+        {
+          "values": [
+            120
+          ]
+        },
+        {
+          "values": [
+            121
+          ]
+        }
+      ],
+      "number": 4
+    },
+    {
+      "kind": "descending_bands",
+      "title": "Рівень заряду",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "%"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "bands": [
+        {
+          "min": 85,
+          "label": "високий"
+        },
+        {
+          "min": 40,
+          "label": "середній"
+        },
+        {
+          "min": 15,
+          "label": "низький"
+        }
+      ],
+      "default": "критичний",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти пороги від найбільшого до найменшого.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            14
+          ]
+        },
+        {
+          "values": [
+            15
+          ]
+        },
+        {
+          "values": [
+            40
+          ]
+        },
+        {
+          "values": [
+            85
+          ]
+        },
+        {
+          "values": [
+            100
+          ]
+        },
+        {
+          "values": [
+            101
+          ]
+        }
+      ],
+      "number": 5
+    },
+    {
+      "kind": "descending_bands",
+      "title": "Точність моделі",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "%"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "bands": [
+        {
+          "min": 95,
+          "label": "дуже висока"
+        },
+        {
+          "min": 80,
+          "label": "висока"
+        },
+        {
+          "min": 65,
+          "label": "базова"
+        }
+      ],
+      "default": "недостатня",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти пороги від найбільшого до найменшого.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            64
+          ]
+        },
+        {
+          "values": [
+            65
+          ]
+        },
+        {
+          "values": [
+            80
+          ]
+        },
+        {
+          "values": [
+            95
+          ]
+        },
+        {
+          "values": [
+            100
+          ]
+        },
+        {
+          "values": [
+            101
+          ]
+        }
+      ],
+      "number": 6
+    },
+    {
+      "kind": "ascending_bands",
+      "title": "Час відповіді",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "мс"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 5000
+      },
+      "bands": [
+        {
+          "max": 200,
+          "label": "миттєво"
+        },
+        {
+          "max": 800,
+          "label": "швидко"
+        },
+        {
+          "max": 2000,
+          "label": "прийнятно"
+        }
+      ],
+      "default": "повільно",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти верхні межі від найменшої до найбільшої.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            200
+          ]
+        },
+        {
+          "values": [
+            201
+          ]
+        },
+        {
+          "values": [
+            800
+          ]
+        },
+        {
+          "values": [
+            2000
+          ]
+        },
+        {
+          "values": [
+            5000
+          ]
+        },
+        {
+          "values": [
+            5001
+          ]
+        }
+      ],
+      "number": 7
+    },
+    {
+      "kind": "ascending_bands",
+      "title": "Температура обладнання",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "°C"
+        }
+      ],
+      "domain": {
+        "min": -20,
+        "max": 120
+      },
+      "bands": [
+        {
+          "max": 35,
+          "label": "прохолодно"
+        },
+        {
+          "max": 70,
+          "label": "норма"
+        },
+        {
+          "max": 90,
+          "label": "гаряче"
+        }
+      ],
+      "default": "перегрів",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти верхні межі від найменшої до найбільшої.",
+      "cases": [
+        {
+          "values": [
+            -21
+          ]
+        },
+        {
+          "values": [
+            -20
+          ]
+        },
+        {
+          "values": [
+            35
+          ]
+        },
+        {
+          "values": [
+            36
+          ]
+        },
+        {
+          "values": [
+            70
+          ]
+        },
+        {
+          "values": [
+            90
+          ]
+        },
+        {
+          "values": [
+            120
+          ]
+        },
+        {
+          "values": [
+            121
+          ]
+        }
+      ],
+      "number": 8
+    },
+    {
+      "kind": "ascending_bands",
+      "title": "Довжина черги",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "запитів"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 60
+      },
+      "bands": [
+        {
+          "max": 0,
+          "label": "порожня"
+        },
+        {
+          "max": 5,
+          "label": "коротка"
+        },
+        {
+          "max": 15,
+          "label": "середня"
+        }
+      ],
+      "default": "довга",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти верхні межі від найменшої до найбільшої.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            1
+          ]
+        },
+        {
+          "values": [
+            5
+          ]
+        },
+        {
+          "values": [
+            15
+          ]
+        },
+        {
+          "values": [
+            60
+          ]
+        },
+        {
+          "values": [
+            61
+          ]
+        }
+      ],
+      "number": 9
+    },
+    {
+      "kind": "ascending_bands",
+      "title": "Шум у кімнаті",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "дБ"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 120
+      },
+      "bands": [
+        {
+          "max": 30,
+          "label": "тихо"
+        },
+        {
+          "max": 55,
+          "label": "помірно"
+        },
+        {
+          "max": 80,
+          "label": "гучно"
+        }
+      ],
+      "default": "надто гучно",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти верхні межі від найменшої до найбільшої.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            30
+          ]
+        },
+        {
+          "values": [
+            31
+          ]
+        },
+        {
+          "values": [
+            55
+          ]
+        },
+        {
+          "values": [
+            80
+          ]
+        },
+        {
+          "values": [
+            120
+          ]
+        },
+        {
+          "values": [
+            121
+          ]
+        }
+      ],
+      "number": 10
+    },
+    {
+      "kind": "ascending_bands",
+      "title": "Розмір файлу",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "МБ"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 2048
+      },
+      "bands": [
+        {
+          "max": 10,
+          "label": "малий"
+        },
+        {
+          "max": 100,
+          "label": "середній"
+        },
+        {
+          "max": 500,
+          "label": "великий"
+        }
+      ],
+      "default": "дуже великий",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти верхні межі від найменшої до найбільшої.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            10
+          ]
+        },
+        {
+          "values": [
+            11
+          ]
+        },
+        {
+          "values": [
+            100
+          ]
+        },
+        {
+          "values": [
+            500
+          ]
+        },
+        {
+          "values": [
+            2048
+          ]
+        },
+        {
+          "values": [
+            2049
+          ]
+        }
+      ],
+      "number": 11
+    },
+    {
+      "kind": "ascending_bands",
+      "title": "Затримка маршруту",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "мс"
+        }
+      ],
+      "domain": {
+        "min": 1,
+        "max": 1000
+      },
+      "bands": [
+        {
+          "max": 50,
+          "label": "низька"
+        },
+        {
+          "max": 150,
+          "label": "помірна"
+        },
+        {
+          "max": 400,
+          "label": "висока"
+        }
+      ],
+      "default": "критична",
+      "rule": "Спочатку відхилити значення поза діапазоном, потім перевіряти верхні межі від найменшої до найбільшої.",
+      "cases": [
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            1
+          ]
+        },
+        {
+          "values": [
+            50
+          ]
+        },
+        {
+          "values": [
+            51
+          ]
+        },
+        {
+          "values": [
+            150
+          ]
+        },
+        {
+          "values": [
+            400
+          ]
+        },
+        {
+          "values": [
+            1000
+          ]
+        },
+        {
+          "values": [
+            1001
+          ]
+        }
+      ],
+      "number": 12
+    },
+    {
+      "kind": "inclusive_window",
+      "title": "Робоча температура",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "°C"
+        }
+      ],
+      "domain": {
+        "min": -50,
+        "max": 100
+      },
+      "window": {
+        "min": 10,
+        "max": 35,
+        "inside": "робочий діапазон",
+        "outside": "поза робочим діапазоном"
+      },
+      "rule": "Діапазон допустимих даних і цільове включне вікно — різні перевірки.",
+      "cases": [
+        {
+          "values": [
+            -51
+          ]
+        },
+        {
+          "values": [
+            -50
+          ]
+        },
+        {
+          "values": [
+            9
+          ]
+        },
+        {
+          "values": [
+            10
+          ]
+        },
+        {
+          "values": [
+            35
+          ]
+        },
+        {
+          "values": [
+            36
+          ]
+        },
+        {
+          "values": [
+            100
+          ]
+        },
+        {
+          "values": [
+            101
+          ]
+        }
+      ],
+      "number": 13
+    },
+    {
+      "kind": "inclusive_window",
+      "title": "Рекомендована вологість",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "%"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "window": {
+        "min": 40,
+        "max": 60,
+        "inside": "рекомендовано",
+        "outside": "поза рекомендацією"
+      },
+      "rule": "Діапазон допустимих даних і цільове включне вікно — різні перевірки.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            39
+          ]
+        },
+        {
+          "values": [
+            40
+          ]
+        },
+        {
+          "values": [
+            60
+          ]
+        },
+        {
+          "values": [
+            61
+          ]
+        },
+        {
+          "values": [
+            100
+          ]
+        },
+        {
+          "values": [
+            101
+          ]
+        }
+      ],
+      "number": 14
+    },
+    {
+      "kind": "inclusive_window",
+      "title": "Навчальне навантаження",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "год/тиждень"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 24
+      },
+      "window": {
+        "min": 6,
+        "max": 10,
+        "inside": "цільовий інтервал",
+        "outside": "поза цільовим інтервалом"
+      },
+      "rule": "Діапазон допустимих даних і цільове включне вікно — різні перевірки.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            5
+          ]
+        },
+        {
+          "values": [
+            6
+          ]
+        },
+        {
+          "values": [
+            10
+          ]
+        },
+        {
+          "values": [
+            11
+          ]
+        },
+        {
+          "values": [
+            24
+          ]
+        },
+        {
+          "values": [
+            25
+          ]
+        }
+      ],
+      "number": 15
+    },
+    {
+      "kind": "inclusive_window",
+      "title": "Напруга живлення",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "float",
+          "unit": "В"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 15
+      },
+      "window": {
+        "min": 4.75,
+        "max": 5.25,
+        "inside": "стабільна",
+        "outside": "нестабільна"
+      },
+      "rule": "Діапазон допустимих даних і цільове включне вікно — різні перевірки.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            4.5
+          ]
+        },
+        {
+          "values": [
+            4.75
+          ]
+        },
+        {
+          "values": [
+            5.25
+          ]
+        },
+        {
+          "values": [
+            5.5
+          ]
+        },
+        {
+          "values": [
+            15
+          ]
+        },
+        {
+          "values": [
+            16
+          ]
+        }
+      ],
+      "number": 16
+    },
+    {
+      "kind": "inclusive_window",
+      "title": "Час початку",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "година доби"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 23
+      },
+      "window": {
+        "min": 8,
+        "max": 17,
+        "inside": "робочий час",
+        "outside": "позаробочий час"
+      },
+      "rule": "Діапазон допустимих даних і цільове включне вікно — різні перевірки.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            7
+          ]
+        },
+        {
+          "values": [
+            8
+          ]
+        },
+        {
+          "values": [
+            17
+          ]
+        },
+        {
+          "values": [
+            18
+          ]
+        },
+        {
+          "values": [
+            23
+          ]
+        },
+        {
+          "values": [
+            24
+          ]
+        }
+      ],
+      "number": 17
+    },
+    {
+      "kind": "inclusive_window",
+      "title": "Рівень pH навчального розчину",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "float",
+          "unit": "pH"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 14
+      },
+      "window": {
+        "min": 6.5,
+        "max": 7.5,
+        "inside": "нейтральна зона",
+        "outside": "поза нейтральною зоною"
+      },
+      "rule": "Діапазон допустимих даних і цільове включне вікно — різні перевірки.",
+      "cases": [
+        {
+          "values": [
+            -1
+          ]
+        },
+        {
+          "values": [
+            0
+          ]
+        },
+        {
+          "values": [
+            6.25
+          ]
+        },
+        {
+          "values": [
+            6.5
+          ]
+        },
+        {
+          "values": [
+            7.5
+          ]
+        },
+        {
+          "values": [
+            7.75
+          ]
+        },
+        {
+          "values": [
+            14
+          ]
+        },
+        {
+          "values": [
+            15
+          ]
+        }
+      ],
+      "number": 18
+    },
+    {
+      "kind": "threshold_and_flag",
+      "title": "Допуск до практикуму",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "балів"
+        },
+        {
+          "name": "has_equipment",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "threshold": 60,
+      "success": "допущено",
+      "failure": "не допущено",
+      "rule": "Результат «допущено» лише коли value >= 60 і has_equipment == True.",
+      "cases": [
+        {
+          "values": [
+            -1,
+            true
+          ]
+        },
+        {
+          "values": [
+            0,
+            false
+          ]
+        },
+        {
+          "values": [
+            59,
+            true
+          ]
+        },
+        {
+          "values": [
+            60,
+            false
+          ]
+        },
+        {
+          "values": [
+            60,
+            true
+          ]
+        },
+        {
+          "values": [
+            100,
+            true
+          ]
+        },
+        {
+          "values": [
+            100,
+            false
+          ]
+        },
+        {
+          "values": [
+            101,
+            true
+          ]
+        }
+      ],
+      "number": 19
+    },
+    {
+      "kind": "threshold_and_flag",
+      "title": "Готовність резервної копії",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "% завершення"
+        },
+        {
+          "name": "checksum_ok",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "threshold": 100,
+      "success": "готово",
+      "failure": "не готово",
+      "rule": "Результат «готово» лише коли value >= 100 і checksum_ok == True.",
+      "cases": [
+        {
+          "values": [
+            -1,
+            true
+          ]
+        },
+        {
+          "values": [
+            0,
+            false
+          ]
+        },
+        {
+          "values": [
+            99,
+            true
+          ]
+        },
+        {
+          "values": [
+            100,
+            false
+          ]
+        },
+        {
+          "values": [
+            100,
+            true
+          ]
+        },
+        {
+          "values": [
+            100,
+            true
+          ]
+        },
+        {
+          "values": [
+            100,
+            false
+          ]
+        },
+        {
+          "values": [
+            101,
+            true
+          ]
+        }
+      ],
+      "number": 20
+    },
+    {
+      "kind": "threshold_and_flag",
+      "title": "Доступ до аудиторії",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "років"
+        },
+        {
+          "name": "has_pass",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 16,
+        "max": 90
+      },
+      "threshold": 18,
+      "success": "доступ дозволено",
+      "failure": "доступ заборонено",
+      "rule": "Результат «доступ дозволено» лише коли value >= 18 і has_pass == True.",
+      "cases": [
+        {
+          "values": [
+            15,
+            true
+          ]
+        },
+        {
+          "values": [
+            16,
+            false
+          ]
+        },
+        {
+          "values": [
+            17,
+            true
+          ]
+        },
+        {
+          "values": [
+            18,
+            false
+          ]
+        },
+        {
+          "values": [
+            18,
+            true
+          ]
+        },
+        {
+          "values": [
+            90,
+            true
+          ]
+        },
+        {
+          "values": [
+            90,
+            false
+          ]
+        },
+        {
+          "values": [
+            91,
+            true
+          ]
+        }
+      ],
+      "number": 21
+    },
+    {
+      "kind": "threshold_and_flag",
+      "title": "Публікація завдання",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "виконаних перевірок"
+        },
+        {
+          "name": "reviewed",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 20
+      },
+      "threshold": 10,
+      "success": "можна публікувати",
+      "failure": "ще не можна",
+      "rule": "Результат «можна публікувати» лише коли value >= 10 і reviewed == True.",
+      "cases": [
+        {
+          "values": [
+            -1,
+            true
+          ]
+        },
+        {
+          "values": [
+            0,
+            false
+          ]
+        },
+        {
+          "values": [
+            9,
+            true
+          ]
+        },
+        {
+          "values": [
+            10,
+            false
+          ]
+        },
+        {
+          "values": [
+            10,
+            true
+          ]
+        },
+        {
+          "values": [
+            20,
+            true
+          ]
+        },
+        {
+          "values": [
+            20,
+            false
+          ]
+        },
+        {
+          "values": [
+            21,
+            true
+          ]
+        }
+      ],
+      "number": 22
+    },
+    {
+      "kind": "threshold_and_flag",
+      "title": "Запуск тестового стенда",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "ГБ RAM"
+        },
+        {
+          "name": "config_valid",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 32
+      },
+      "threshold": 8,
+      "success": "запуск дозволено",
+      "failure": "запуск заборонено",
+      "rule": "Результат «запуск дозволено» лише коли value >= 8 і config_valid == True.",
+      "cases": [
+        {
+          "values": [
+            -1,
+            true
+          ]
+        },
+        {
+          "values": [
+            0,
+            false
+          ]
+        },
+        {
+          "values": [
+            7,
+            true
+          ]
+        },
+        {
+          "values": [
+            8,
+            false
+          ]
+        },
+        {
+          "values": [
+            8,
+            true
+          ]
+        },
+        {
+          "values": [
+            32,
+            true
+          ]
+        },
+        {
+          "values": [
+            32,
+            false
+          ]
+        },
+        {
+          "values": [
+            33,
+            true
+          ]
+        }
+      ],
+      "number": 23
+    },
+    {
+      "kind": "threshold_and_flag",
+      "title": "Участь у захисті",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "% готовності"
+        },
+        {
+          "name": "report_submitted",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "threshold": 50,
+      "success": "готовий до захисту",
+      "failure": "не готовий",
+      "rule": "Результат «готовий до захисту» лише коли value >= 50 і report_submitted == True.",
+      "cases": [
+        {
+          "values": [
+            -1,
+            true
+          ]
+        },
+        {
+          "values": [
+            0,
+            false
+          ]
+        },
+        {
+          "values": [
+            49,
+            true
+          ]
+        },
+        {
+          "values": [
+            50,
+            false
+          ]
+        },
+        {
+          "values": [
+            50,
+            true
+          ]
+        },
+        {
+          "values": [
+            100,
+            true
+          ]
+        },
+        {
+          "values": [
+            100,
+            false
+          ]
+        },
+        {
+          "values": [
+            101,
+            true
+          ]
+        }
+      ],
+      "number": 24
+    },
+    {
+      "kind": "threshold_or_flag",
+      "title": "Пріоритетна черга",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "хв очікування"
+        },
+        {
+          "name": "is_urgent",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 120
+      },
+      "threshold": 90,
+      "success": "пріоритет",
+      "failure": "звичайно",
+      "rule": "Результат «пріоритет» коли value >= 90 або is_urgent == True.",
+      "cases": [
+        {
+          "values": [
+            -1,
+            false
+          ]
+        },
+        {
+          "values": [
+            0,
+            false
+          ]
+        },
+        {
+          "values": [
+            89,
+            false
+          ]
+        },
+        {
+          "values": [
+            89,
+            true
+          ]
+        },
+        {
+          "values": [
+            90,
+            false
+          ]
+        },
+        {
+          "values": [
+            120,
+            false
+          ]
+        },
+        {
+          "values": [
+            120,
+            true
+          ]
+        },
+        {
+          "values": [
+            121,
+            false
+          ]
+        }
+      ],
+      "number": 25
+    },
+    {
+      "kind": "threshold_or_flag",
+      "title": "Попередження сховища",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "% заповнення"
+        },
+        {
+          "name": "backup_failed",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "threshold": 85,
+      "success": "попередження",
+      "failure": "норма",
+      "rule": "Результат «попередження» коли value >= 85 або backup_failed == True.",
+      "cases": [
+        {
+          "values": [
+            -1,
+            false
+          ]
+        },
+        {
+          "values": [
+            0,
+            false
+          ]
+        },
+        {
+          "values": [
+            84,
+            false
+          ]
+        },
+        {
+          "values": [
+            84,
+            true
+          ]
+        },
+        {
+          "values": [
+            85,
+            false
+          ]
+        },
+        {
+          "values": [
+            100,
+            false
+          ]
+        },
+        {
+          "values": [
+            100,
+            true
+          ]
+        },
+        {
+          "values": [
+            101,
+            false
+          ]
+        }
+      ],
+      "number": 26
+    },
+    {
+      "kind": "threshold_or_flag",
+      "title": "Додаткова перевірка",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "балів довіри"
+        },
+        {
+          "name": "manual_request",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "threshold": 40,
+      "success": "перевірити",
+      "failure": "пропустити",
+      "rule": "Результат «перевірити» коли value >= 40 або manual_request == True.",
+      "cases": [
+        {
+          "values": [
+            -1,
+            false
+          ]
+        },
+        {
+          "values": [
+            0,
+            false
+          ]
+        },
+        {
+          "values": [
+            39,
+            false
+          ]
+        },
+        {
+          "values": [
+            39,
+            true
+          ]
+        },
+        {
+          "values": [
+            40,
+            false
+          ]
+        },
+        {
+          "values": [
+            100,
+            false
+          ]
+        },
+        {
+          "values": [
+            100,
+            true
+          ]
+        },
+        {
+          "values": [
+            101,
+            false
+          ]
+        }
+      ],
+      "number": 27
+    },
+    {
+      "kind": "threshold_or_flag",
+      "title": "Режим економії",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "% заряду"
+        },
+        {
+          "name": "forced_mode",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 100
+      },
+      "threshold": 20,
+      "success": "увімкнути",
+      "failure": "не вмикати",
+      "rule": "Результат «увімкнути» коли value >= 20 або forced_mode == True.",
+      "cases": [
+        {
+          "values": [
+            -1,
+            false
+          ]
+        },
+        {
+          "values": [
+            0,
+            false
+          ]
+        },
+        {
+          "values": [
+            19,
+            false
+          ]
+        },
+        {
+          "values": [
+            19,
+            true
+          ]
+        },
+        {
+          "values": [
+            20,
+            false
+          ]
+        },
+        {
+          "values": [
+            100,
+            false
+          ]
+        },
+        {
+          "values": [
+            100,
+            true
+          ]
+        },
+        {
+          "values": [
+            101,
+            false
+          ]
+        }
+      ],
+      "number": 28
+    },
+    {
+      "kind": "threshold_or_flag",
+      "title": "Сповіщення про затримку",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "с"
+        },
+        {
+          "name": "user_waiting",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 300
+      },
+      "threshold": 120,
+      "success": "сповістити",
+      "failure": "не сповіщати",
+      "rule": "Результат «сповістити» коли value >= 120 або user_waiting == True.",
+      "cases": [
+        {
+          "values": [
+            -1,
+            false
+          ]
+        },
+        {
+          "values": [
+            0,
+            false
+          ]
+        },
+        {
+          "values": [
+            119,
+            false
+          ]
+        },
+        {
+          "values": [
+            119,
+            true
+          ]
+        },
+        {
+          "values": [
+            120,
+            false
+          ]
+        },
+        {
+          "values": [
+            300,
+            false
+          ]
+        },
+        {
+          "values": [
+            300,
+            true
+          ]
+        },
+        {
+          "values": [
+            301,
+            false
+          ]
+        }
+      ],
+      "number": 29
+    },
+    {
+      "kind": "threshold_or_flag",
+      "title": "Резервний канал",
+      "inputs": [
+        {
+          "name": "value",
+          "type": "int",
+          "unit": "мс затримки"
+        },
+        {
+          "name": "primary_down",
+          "type": "bool",
+          "unit": "так/ні"
+        }
+      ],
+      "domain": {
+        "min": 0,
+        "max": 1000
+      },
+      "threshold": 500,
+      "success": "перемкнути",
+      "failure": "залишити основний",
+      "rule": "Результат «перемкнути» коли value >= 500 або primary_down == True.",
+      "cases": [
+        {
+          "values": [
+            -1,
+            false
+          ]
+        },
+        {
+          "values": [
+            0,
+            false
+          ]
+        },
+        {
+          "values": [
+            499,
+            false
+          ]
+        },
+        {
+          "values": [
+            499,
+            true
+          ]
+        },
+        {
+          "values": [
+            500,
+            false
+          ]
+        },
+        {
+          "values": [
+            1000,
+            false
+          ]
+        },
+        {
+          "values": [
+            1000,
+            true
+          ]
+        },
+        {
+          "values": [
+            1001,
+            false
+          ]
+        }
+      ],
+      "number": 30
+    }
+  ]
+}
